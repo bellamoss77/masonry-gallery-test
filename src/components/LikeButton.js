@@ -1,22 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useLiked} from "./LikedContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as SolidHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as regularHeart } from '@fortawesome/free-regular-svg-icons';
 import './LikeButton.scss';
-import { useLiked } from "./LikedContext";
 
-const LikeButton = ({ image, images }) => {
-    const { isLiked, toggleLike } = useLiked();
-    const liked = image ? isLiked[image.id] : false;
+
+const LikeButton = ({ image }) => {
+    const { likes, handleLikeClick } = useLiked();
+    const liked = likes[image.id];
 
     return (
-       <button 
-            className={`like-btn ${liked ? 'liked' : ''}`}
-            onClick={() => image && toggleLike(image.id, images)}>
-    
-                <FontAwesomeIcon icon={liked ? SolidHeart : regularHeart} />
-            </button>
-    );
+        <button
+            className={`like-btn ${liked ? 'liked' : 'not-liked'}`}
+            onClick={(e) => { e.stopPropagation(); handleLikeClick(image.id, [image]); }}
+        >
+            <FontAwesomeIcon icon={liked ? SolidHeart : regularHeart} />
+        </button>
+    )
 };
 
 export default LikeButton;

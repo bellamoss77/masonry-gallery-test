@@ -10,7 +10,7 @@ const MasonryGridContent = ({ images }) => {
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [modalOpen, setModalOpen] = useState(false);
-    const { likedImages } = useLiked();
+    const { likedImages, listBtnVisible } = useLiked();
 
     const openLightbox = (index) => {
         setCurrentImageIndex(index);
@@ -48,8 +48,8 @@ const MasonryGridContent = ({ images }) => {
                 onClose={closeLightbox}
                 startIndex={currentImageIndex}
             />
-            {likedImages.length > 0 && (
-                <button className="open-modal-btn" onClick={() => setModalOpen(true)}>
+            {listBtnVisible && (
+                <button className="open-modal-btn visible" onClick={() => setModalOpen(true)}>
                     Review Liked Images
                 </button>
             )}

@@ -24,6 +24,7 @@ $activeColor: rgb(255, 255, 255);
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
     @include flex(column, center, center);
+    z-index: 1000;
 }
 
 .lightbox {
@@ -33,6 +34,7 @@ $activeColor: rgb(255, 255, 255);
     background-color: #fff;
     outline: none;
     @include flex(column, center, center);
+    z-index: 10001;
 
     &-content {
         @include flex(column, center, center);

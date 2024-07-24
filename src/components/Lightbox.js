@@ -17,11 +17,11 @@ const Lightbox = ({ images, isOpen, onClose, startIndex }) => {
     }, [isOpen, startIndex]);
 
     const goToNext = useCallback(() => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, [images.length]);
 
     const goToPrevious = useCallback(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
     }, [images.length]);
 
     useEffect(() => {
@@ -53,7 +53,6 @@ const Lightbox = ({ images, isOpen, onClose, startIndex }) => {
 
     const currentImage = images[currentIndex];
 
-    
     return (
         <ReactModal
             isOpen={isOpen}
@@ -63,19 +62,19 @@ const Lightbox = ({ images, isOpen, onClose, startIndex }) => {
             overlayClassName="lightbox-overlay"
         >
             <div className="lightbox-content">
-                <div className="lightbox-img">
-                    <img src={images[currentIndex].src} alt={images[currentIndex].alt} />
-                    <LikeButton image={currentImage} />
-                    <div className="lightbox-caption">
-                        {images[currentIndex].caption}
-                    </div>
-                </div>
                 <button className="lightbox-close" onClick={onClose}>
                     <IoIosCloseCircle />
                 </button>
                 <button className="lightbox-prev" onClick={goToPrevious}>
                     <GrPrevious />
                 </button>
+                <div className="lightbox-img">
+                    <img src={currentImage.src} alt={currentImage.alt} />
+                    <LikeButton image={currentImage} />
+                    <div className="lightbox-caption">
+                        {currentImage.caption}
+                    </div>
+                </div>
                 <button className="lightbox-next" onClick={goToNext}>
                     <GrNext />
                 </button>
