@@ -1,0 +1,15 @@
+.like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1000;
+
+    .liked {
+        color: rgba(255, 0, 0, 1);
+    }
+
+    .not-liked {
+        color: rgba(255, 0, 0, 0.6);
+    }
+}

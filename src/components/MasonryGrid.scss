@@ -1,0 +1,43 @@
+.masonry-grid {
+    display: flex;
+    gap: 5px;
+
+    .masonry-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .masonry-item {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+
+            button {
+                position: absolute;
+                bottom: 1.2rem;
+                right: 1.2rem;
+                font-size: 1.2rem;
+                color: rgba(200, 0, 0, 0.6);
+                background-color: rgba(250, 246, 219, 0.6);
+                padding: .2em .2em .1em .2em;
+                border-radius: 50%;
+                z-index: 1000;
+
+                &:hover {
+                    color: rgba(200, 0, 0, 1);
+                }
+
+                &.liked {
+                    color: rgba(200, 0, 0, 1);
+                    background-color: rgba(250, 246, 219, 1);
+                }
+            }
+        }
+    }
+}
