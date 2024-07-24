@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/masonry-gallery-test/static/css/main.d00baaec.css",
-    "main.js": "/masonry-gallery-test/static/js/main.3c369699.js",
+    "main.js": "/masonry-gallery-test/static/js/main.fb72e345.js",
     "static/js/453.fa4a89df.chunk.js": "/masonry-gallery-test/static/js/453.fa4a89df.chunk.js",
     "index.html": "/masonry-gallery-test/index.html",
     "main.d00baaec.css.map": "/masonry-gallery-test/static/css/main.d00baaec.css.map",
-    "main.3c369699.js.map": "/masonry-gallery-test/static/js/main.3c369699.js.map",
+    "main.fb72e345.js.map": "/masonry-gallery-test/static/js/main.fb72e345.js.map",
     "453.fa4a89df.chunk.js.map": "/masonry-gallery-test/static/js/453.fa4a89df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d00baaec.css",
-    "static/js/main.3c369699.js"
+    "static/js/main.fb72e345.js"
   ]
 }
