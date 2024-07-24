@@ -62,12 +62,6 @@ const Lightbox = ({ images, isOpen, onClose, startIndex }) => {
             overlayClassName="lightbox-overlay"
         >
             <div className="lightbox-content">
-                <button className="lightbox-close" onClick={onClose}>
-                    <IoIosCloseCircle />
-                </button>
-                <button className="lightbox-prev" onClick={goToPrevious}>
-                    <GrPrevious />
-                </button>
                 <div className="lightbox-img">
                     <img src={currentImage.src} alt={currentImage.alt} />
                     <LikeButton image={currentImage} />
@@ -75,6 +69,12 @@ const Lightbox = ({ images, isOpen, onClose, startIndex }) => {
                         {currentImage.caption}
                     </div>
                 </div>
+                <button className="lightbox-close" onClick={onClose}>
+                    <IoIosCloseCircle />
+                </button>
+                <button className="lightbox-prev" onClick={goToPrevious}>
+                    <GrPrevious />
+                </button>
                 <button className="lightbox-next" onClick={goToNext}>
                     <GrNext />
                 </button>

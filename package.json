@@ -2,8 +2,8 @@
   "name": "masonry-gallery-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bellamoss77.github.io/masonry-gallery-test",
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
@@ -11,7 +11,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
     "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -19,7 +19,7 @@
     "react-masonry-css": "^1.0.16",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.25.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "sass": "^1.77.8",
     "web-vitals": "^2.1.4"
   },
@@ -27,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.1.1"
   }
 }

@@ -1,3 +1,13 @@
+@import url("https://use.typekit.net/efa7ivj.css");
+
+$cursiveFont: 'dream-big-wide', cursive;
+$sansSerifFont: 'arboria', sans-serif;
+$cream: rgb(250, 246, 219);
+$beigeAccent: rgb(217, 195, 162);
+$blueAccent: rgb(0, 90, 112);
+$forestGreenPrimary: rgb(0,88,42);
+$activeColor: rgb(255, 255, 255);
+
 .masonry-grid {
     display: flex;
     gap: 5px;
@@ -15,14 +25,16 @@
 
             img {
                 width: 100%;
+                height: auto;
                 display: block;
+                border-radius: 8px;
             }
 
             button {
                 position: absolute;
                 bottom: 1.2rem;
                 right: 1.2rem;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 color: rgba(200, 0, 0, 0.6);
                 background-color: rgba(250, 246, 219, 0.6);
                 padding: .2em .2em .1em .2em;
@@ -39,5 +51,24 @@
                 }
             }
         }
+    }
+}
+
+.open-modal-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: $blueAccent;
+    color: $cream;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 10000;
+    display: none;
+
+    &.visible {
+        display: block;
     }
 }

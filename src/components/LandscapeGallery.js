@@ -132,7 +132,47 @@ const images = [
         alt: 'James River Park',
         caption: 'Family Enjoying Sun and Rapids on Rocks off Belle Isle - Richmond, VA - July 2024',
         id: 26
-    }
+    }, {
+        src: process.env.PUBLIC_URL + '/LANDSCAPE2/CP-JULY_1.png',
+        alt: 'Colonial Parkway, VA - July 2024',
+        caption: 'Colonial Parkway, VA - July 2024',
+        id: 1
+    }, {
+        src: process.env.PUBLIC_URL + '/LANDSCAPE2/CP-JULY_2.png',
+        alt: 'Colonial Parkway, VA - July 2024',
+        caption: 'Colonial Parkway, VA - July 2024',
+        id: 2
+    }, {
+        src: process.env.PUBLIC_URL + '/LANDSCAPE2/CP-JULY_3.png',
+        alt: 'Colonial Parkway, VA - July 2024',
+        caption: 'Colonial Parkway, VA - July 2024',
+        id: 3
+    }, {
+        src: process.env.PUBLIC_URL + '/LANDSCAPE2/CP-JULY_4.png',
+        alt: 'Colonial Parkway, VA - July 2024',
+        caption: 'Colonial Parkway, VA - July 2024',
+        id: 4
+    }, {
+        src: process.env.PUBLIC_URL + '/LANDSCAPE2/DUSK_1.png',
+        alt: 'Sepia Dusk, Central Virginia - July 2024',
+        caption: 'Sepia Dusk, Central Virginia - July 2024',
+        id: 5
+    }, {
+        src: process.env.PUBLIC_URL + '/LANDSCAPE2/KSP-JULY_2.png',
+        alt: 'Kiptopeke State Park, Cape Charles, VA - July 2024',
+        caption: 'Kiptopeke State Park, Cape Charles, VA - July 2024',
+        id: 6
+    }, {
+        src: process.env.PUBLIC_URL + '/LANDSCAPE2/KSP-JULY_3.png',
+        alt: 'Kiptopeke State Park, Cape Charles, VA - July 2024',
+        caption: 'Kiptopeke State Park, Cape Charles, VA - July 2024',
+        id: 7
+    }, {
+        src: process.env.PUBLIC_URL + '/LANDSCAPE2/KSP-JULY_4.png',
+        alt: 'Kiptopeke State Park, Cape Charles, VA - July 2024',
+        caption: 'Kiptopeke State Park, Cape Charles, VA - July 2024',
+        id: 8
+    } 
 ];
 
 const LandscapeGallery = () => {

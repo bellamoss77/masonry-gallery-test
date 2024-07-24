@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 
 const LikedContext = createContext();
 
@@ -25,13 +25,14 @@ export const LikedProvider = ({ children }) => {
                     prevLikedImages.filter((img) => img.id !== imageId)
                 );
             }
-            return newLikes;
-        });
 
-        if (Object.values(likes).filter((like) => like).length >= 1) {
-            setListBtnVisible(true);
-        }
+            return newLikes;
+        });        
     };
+
+    useEffect(() => {
+        setListBtnVisible(Object.values(likes).some((like) => like));
+    }, [likes]);
 
     const clearLikedImages = () => {
         setLikedImages([]);

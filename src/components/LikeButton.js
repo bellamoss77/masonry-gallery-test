@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useLiked} from "./LikedContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as SolidHeart } from '@fortawesome/free-solid-svg-icons';

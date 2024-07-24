@@ -19,8 +19,8 @@ const Navbar = () => {
                         className={({ isActive, isPending }) => isPending ? 'pending' : isActive ? 'active' : ''
                         }
                     >
-                        Home
                         <FontAwesomeIcon icon={faHouse} />
+                        Home
                     </NavLink>
                 </li>
                 <li className="nav-dropdown">

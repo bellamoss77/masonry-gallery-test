@@ -35,6 +35,10 @@ $activeColor: rgb(255, 255, 255);
                 text-decoration: none;
                 color: $beigeAccent;
 
+                svg {
+                    margin-right: 5px;
+                }
+
                 &:hover {
                     color: $cream;
                 }

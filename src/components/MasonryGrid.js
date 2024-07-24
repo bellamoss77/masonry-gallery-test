@@ -5,12 +5,14 @@ import LikeButton from "./LikeButton";
 import LikedModal from "./LikedModal";
 import { LikedProvider, useLiked } from "./LikedContext";
 import './MasonryGrid.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const MasonryGridContent = ({ images }) => {
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [modalOpen, setModalOpen] = useState(false);
-    const { likedImages, listBtnVisible } = useLiked();
+    const { listBtnVisible } = useLiked();
 
     const openLightbox = (index) => {
         setCurrentImageIndex(index);
@@ -48,11 +50,12 @@ const MasonryGridContent = ({ images }) => {
                 onClose={closeLightbox}
                 startIndex={currentImageIndex}
             />
-            {listBtnVisible && (
-                <button className="open-modal-btn visible" onClick={() => setModalOpen(true)}>
-                    Review Liked Images
-                </button>
-            )}
+            <button
+                className={`open-modal-btn ${listBtnVisible ? 'visible' : ''}`}
+                onClick={() => setModalOpen(true)}
+            >
+                Review <FontAwesomeIcon icon={faHeart} />
+            </button>
             <LikedModal
                 isOpen={modalOpen}
                 onClose={() => setModalOpen(false)}
