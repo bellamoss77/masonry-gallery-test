@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/masonry-gallery-test/static/css/main.bda19752.css",
-    "main.js": "/masonry-gallery-test/static/js/main.d9a27bb0.js",
+    "main.css": "/masonry-gallery-test/static/css/main.c07fd76b.css",
+    "main.js": "/masonry-gallery-test/static/js/main.d609c9a1.js",
     "static/js/453.fa4a89df.chunk.js": "/masonry-gallery-test/static/js/453.fa4a89df.chunk.js",
     "index.html": "/masonry-gallery-test/index.html",
-    "main.bda19752.css.map": "/masonry-gallery-test/static/css/main.bda19752.css.map",
-    "main.d9a27bb0.js.map": "/masonry-gallery-test/static/js/main.d9a27bb0.js.map",
+    "main.c07fd76b.css.map": "/masonry-gallery-test/static/css/main.c07fd76b.css.map",
+    "main.d609c9a1.js.map": "/masonry-gallery-test/static/js/main.d609c9a1.js.map",
     "453.fa4a89df.chunk.js.map": "/masonry-gallery-test/static/js/453.fa4a89df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bda19752.css",
-    "static/js/main.d9a27bb0.js"
+    "static/css/main.c07fd76b.css",
+    "static/js/main.d609c9a1.js"
   ]
 }
