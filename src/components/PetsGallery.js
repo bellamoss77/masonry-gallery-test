@@ -3,195 +3,233 @@ import MasonryGrid from "./MasonryGrid";
 
 const images = [
     {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/APOLLO-ATHENA-JULY_1.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/APOLLO-ATHENA-JULY_1.png`,
         alt: 'dogs on shore of chesapeake bay',
         caption: 'Playtime on the Chesapeake Bay, Kiptopeke State Park - Cape Charles, VA (July 2024)',        
-        id: 1
+        id: 1,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/APOLLO-ATHENA-JULY_2.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/APOLLO-ATHENA-JULY_2.png`,
         alt: 'dogs on shore of chesapeake bay',
         caption: 'Playtime on the Chesapeake Bay, Kiptopeke State Park - Cape Charles, VA (July 2024)',        
-        id: 2
+        id: 2,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/ATHENA-JULY_1.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/ATHENA-JULY_1.png`,
         alt: 'dog laying in grass',
         caption: 'Athena in the Sun - Central VA (July 2024)',        
-        id: 3
+        id: 3,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/ATHENA-JULY_2.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/ATHENA-JULY_2.png`,
         alt: 'dog laying in grass from behind',
         caption: 'Athena in the Sun #2 - Central, VA (July 2024)',        
-        id: 4
+        id: 4,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/ATHENA-JULY_3.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/ATHENA-JULY_3.png`,
         alt: 'dog laying in grass from behind',
         caption: 'Athena in the Sun #3 - Central, VA (July 2024)',        
-        id: 5
+        id: 5,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/ATHENA-JULY_4.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/ATHENA-JULY_4.png`,
         alt: 'dog sitting in yard',
         caption: 'Waiting and Wanting - Central Virginia (July 2024)',        
-        id: 6
+        id: 6,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/ATHENA-JULY_5.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/ATHENA-JULY_5.png`,
         alt: 'dog drinking water off plastic bin under sepia skies',
         caption: 'Sepia Skies Après la Tempête - Central VA (July 2024)',        
-        id: 7
+        id: 7,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/ATHENA-JULY_6.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/ATHENA-JULY_6.png`,
         alt: 'dog on shore of bay',
         caption: 'Athena by the Bay, Kiptopeke State Park - Cape Charles, VA (July 2024)',        
-        id: 8
+        id: 8,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Apollo_1.png',
+        src: `${process.env.PUBLIC_URL}PETS2/SH-Apollo_1.png`,
         alt: 'dog on rocks at great falls',
         caption: 'Apollo on the Rocks, Great Falls - Shenandoah National Park, VA (June 2024)',        
-        id: 9
+        id: 9,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Apollo_2.png',
+        src: `${process.env.PUBLIC_URL}PETS2/SH-Apollo_2.png`,
         alt: 'dog wading into watering hole',
         caption: 'Wading Days - Shenandoah National Park Near Sugar Hollow, VA (June 2024)',        
-        id: 10
+        id: 10,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena_1.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena_1.png`,
         alt: 'dog wading in pool at base of waterfall',
         caption: 'Waterfall Wanderings (Athena) - Great Falls, Shenandoah National Park, VA (July 2024)',        
-        id: 11
+        id: 11,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Apollo_3.png',
+        src: `${process.env.PUBLIC_URL}PETS2/SH-Apollo_3.png`,
         alt: 'dog on rocks at great falls',
         caption: 'Apollo on the Rocks #2, Great Falls - Shenandoah National Park, VA (June 2024)',        
-        id: 12
+        id: 12,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena_2.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena_2.png`,
         alt: 'dog wading in pool at base of waterfall (black and white)',
         caption: 'Waterfall Wanderings #2 (Athena) - Great Falls, Shenandoah National Park, VA (July 2024)',        
-        id: 13
+        id: 13,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Apollo_4.png',
+        src: `${process.env.PUBLIC_URL}PETS2/SH-Apollo_4.png`,
         alt: 'dog on rocks at great falls',
         caption: 'Apollo on the Rocks #3, Great Falls - Shenandoah National Park, VA (June 2024)',       
-        id: 14
+        id: 14,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena_3.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena_3.png`,
         alt: 'dog wading in pool at base of waterfall',
         caption: 'Waterfall Wanderings #3 (Athena) - Great Falls, Shenandoah National Park, VA (July 2024)',        
-        id: 15
+        id: 15,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena_4.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena_4.png`,
         alt: 'dog wading in pool at base of waterfall',
         caption: 'Waterfall Wanderings #4 (Athena) - Great Falls, Shenandoah National Park, VA (July 2024)',        
-        id: 16
+        id: 16,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Apollo_5.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Apollo_5.png`,
         alt: 'dog wading in pool at base of waterfall',
         caption: 'Waterfall Wanderings #5 (Apollo) - Great Falls, Shenandoah National Park, VA (July 2024)',        
-        id: 17
+        id: 17,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena_5.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena_5.png`,
         alt: 'dog against colorful rock background',
         caption: 'Pondering (Athena) - Great Falls, Shenandoah National Park, VA (July 2024)',        
-        id: 18
+        id: 18,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena_6.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena_6.png`,
         alt: 'dog staring up at man with sandwich',
         caption: 'New Friends (Athena) - Great Falls, Shenandoah National Park, VA (July 2024)',        
-        id: 19
+        id: 19,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena_7.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena_7.png`,
         alt: 'dog wading through water',
         caption: 'Watery Walk (Athena) - Shenandoah National Park Near Sugar Hollow, VA (June 2024)',        
-        id: 20
+        id: 20,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena_8.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena_8.png`,
         alt: 'dog looking out over rock',
         caption: 'Lookout (Athena) - Great Falls, Shenandoah National Park Near Sugar Hollow, VA (July 2024)',        
-        id: 21
+        id: 21,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Apollo_6.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Apollo_6.png`,
         alt: 'dog wading through water',
         caption: 'Watery Walk #2 (Apollo) - Shenandoah National Park Near Sugar Hollow, VA (June 2024)',        
-        id: 22
+        id: 22,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena_9.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena_9.png`,
         alt: 'dog on rocks',
         caption: 'Athena on the Rocks - Shenandoah National Park Near Sugar Hollow, VA (June 2024)',        
-        id: 23
+        id: 23,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena-Apollo_1.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena-Apollo_1.png`,
         alt: 'dogs wading in rocky river',
         caption: 'Rocky River Ramblings - Shenandoah National Park Near Sugar Hollow, VA (June 2024)',        
-        id: 24
+        id: 24,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS2/SH-Athena-Apollo_2.png',
+        src: `${process.env.PUBLIC_URL}/PETS2/SH-Athena-Apollo_2.png`,
         alt: 'one dog swimming and the other wading in water',
         caption: 'Summer Swim - Shenandoah National Park Near Sugar Hollow, VA (June 2024)',        
-        id: 25
+        id: 25,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_1.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_1.png`,
         alt: 'dogs',
         caption: 'Athena on Boulder - James River Park, Richmond, VA - July 2024',
-        id: 26
+        id: 26,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_2.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_2.png`,
         alt: 'dogs',
         caption: 'Athena Explores Rock Pools, James River Park, Richmond, VA - July 2024',
-        id: 27
+        id: 27,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_3.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_3.png`,
         alt: 'dogs',
         caption: 'Waiting on the Path, James River Park, Richmond, VA - July 2024',
-        id: 28
+        id: 28,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_4.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_4.png`,
         alt: 'dogs',
         caption: 'Running Across the Bridge, James River Park, Richmond, VA - July 2024',
-        id: 29
+        id: 29,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_5.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_5.png`,
         alt: 'dogs',
         caption: 'Looking Over Bridge, James River Park, Richmond, VA - July 2024',
-        id: 30
+        id: 30,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_6.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_6.png`,
         alt: 'dogs',
         caption: 'Out on the Rock, Belle Isle, Richmond, VA - July 2024',
-        id: 31
+        id: 31,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_7.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_7.png`,
         alt: 'dogs',
         caption: 'Out on the Rock #2, Belle Isle, Richmond, VA - July 2024',
-        id: 32
+        id: 32,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_8.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_8.png`,
         alt: 'dogs',
         caption: 'Curious Ruins, Belle Isle, Richmond, VA - July 2024',
-        id: 33
+        id: 33,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_9.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_9.png`,
         alt: 'dogs',
         caption: 'Rocky Exploration, James River Park, Richmond, VA - July 2024',
-        id: 34
+        id: 34,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_10.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_10.png`,
         alt: 'dogs',
         caption: 'Driftwood Inspector, James River Park, Richmond, VA - July 2024',
-        id: 35
+        id: 35,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_11.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_11.png`,
         alt: 'dogs',
         caption: 'Out on the Rock #3, Belle Isle, Richmond, VA - July 2024',
-        id: 36
+        id: 36,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_H_12.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_H_12.png`,
         alt: 'dogs',
         caption: 'Out on the Rock #3 (Black and White), Belle Isle, Richmond, VA - July 2024',
-        id: 37
+        id: 37,
+        loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/~PETS/JRP-RIC-PETS_S_1.png',
+        src: `${process.env.PUBLIC_URL}/PETS/JRP-RIC-PETS_S_1.png`,
         alt: 'dogs',
         caption: 'Out on the Rock #4, Belle Isle, Richmond, VA - July 2024',
-        id: 38
+        id: 38,
+        loading: 'lazy'
     }
 ]
 

@@ -3,95 +3,113 @@ import MasonryGrid from "./MasonryGrid";
 
 const images = [
     {
-       src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_1.png',
+       src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_1.png`,
        alt: 'Abandoned Hyro Plant, view from James River Rock Pools, James River Park, Richmond, VA - July 2024',
        caption: 'Abandoned Hyro Plant, view from James River Rock Pools, James River Park, Richmond, VA - July 2024',
-       id:  1
+       id:  1,
+       loading: 'lazy'
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_2.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_2.png`,
         alt: 'Abandoned Hyro Plant, view from James River Rock Pools, James River Park, Richmond, VA - July 2024',
         caption: 'Abandoned Hyro Plant, view from James River Rock Pools #2, James River Park, Richmond, VA - July 2024',
-        id:  2
+        id:  2,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_3.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_3.png`,
         alt: 'abandoned structure',
         caption: 'Abandoned House-Like Structure, Belle Isle, Richmond, VA - July 2024',
-        id:  3
+        id:  3,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_4.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_4.png`,
         alt: 'abandoned structure',
         caption: 'Abandoned House-Like Structure #2, Belle Isle, Richmond, VA - July 2024',
-        id:  4
+        id:  4,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_5.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_5.png`,
         alt: 'abandoned hydroplant',
         caption: 'Water Droplets Spray Through Exposed Window into Abandoned Hydro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  5
+        id:  5,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_6.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_6.png`,
         alt: 'let love bloom graffiti',
         caption: '"Let Love Bloom", Graffiti on Abandoned Hydro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  6
+        id:  6,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_7.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_7.png`,
         alt: 'structure near abandoned hyrdo plant',
         caption: 'Abandoned Structure Adjacent to Abandoned Hyro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  7
+        id:  7,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_8.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_8.png`,
         alt: 'abandoned hyro plant',
         caption: 'Side Facade of Abandoned Hydro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  8
+        id:  8,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_9.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_9.png`,
         alt: 'youth spraying graffiti inside abandoned hydro plant',
         caption: 'Incognito Graffiti Artist - Abandoned Hydro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  9
+        id:  9,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_10.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_10.png`,
         alt: 'graffiti on abandoned structure near hydro plant',
         caption: 'Gregarious Graffiti, Abandoned Structure Adjacent to Abandoned Hyro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  10
+        id:  10,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_11.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_11.png`,
         alt: 'graffiti on abandoned hydro plant',
         caption: 'Gregarious Graffiti #2, Abandoned Hydro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  11
+        id:  11,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_12.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_12.png`,
         alt: 'dogs running toward abandoned hydro plant',
         caption: 'Gregarious Graffiti #3, Abandoned Hydro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  12
+        id:  12,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_13.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_13.png`,
         alt: 'abandoned hyro plant from distance',
         caption: 'Abandoned Hyro Plant, view from Pedestrian Bridge, James River Park, Richmond, VA - July 2024',
-        id:  13
+        id:  13,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_14.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_14.png`,
         alt: '"Free Palestine" graffiti on pedestrian bridge',
         caption: 'Modern Demands, Pedestrian Bridge to Belle Isle, Richmond, VA - July 2024',
-        id:  14
+        id:  14,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_H_15.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_H_15.png`,
         alt: 'abandoned hydro plant',
         caption: 'Abandoned Hyro Plant, view from Pedestrian Bridge, James River Park, Richmond, VA - July 2024',
-        id:  15
+        id:  15,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_S_1.png',
+        src:`${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_S_1.png`,
         alt: 'graffiti on abandoned hydro plant',
         caption: 'Gregarious Graffiti #4, Abandoned Hydro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  16
+        id:  16,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_V_1.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_V_1.png`,
         alt: 'graffiti on door of abandoned hydro plant',
         caption: 'Gregarious Graffiti #5, Abandoned Hydro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  17
+        id:  17,
+        loading: 'lazy'
      }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/RUINS/JRP-RIC-RUINS_V_2.png',
+        src: `${process.env.PUBLIC_URL}/RUINS/JRP-RIC-RUINS_V_2.png`,
         alt: 'structure near abandoned hydro plant',
         caption: 'Abandoned Structure Adjacent to Abandoned Hyro Plant, Belle Isle, Richmond, VA - July 2024',
-        id:  18
+        id:  18,
+        loading: 'lazy'
      },
 ]
 
