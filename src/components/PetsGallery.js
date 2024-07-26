@@ -188,7 +188,7 @@ const images = [
         caption: 'Out on the Rock #3 (Black and White), Belle Isle, Richmond, VA - July 2024',
         id: 37
     }, {
-        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/PETS/JRP-RIC-PETS_S_1.png',
+        src: 'https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/~PETS/JRP-RIC-PETS_S_1.png',
         alt: 'dogs',
         caption: 'Out on the Rock #4, Belle Isle, Richmond, VA - July 2024',
         id: 38

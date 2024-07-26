@@ -10,21 +10,29 @@ const LikedModal = ({ isOpen, onClose }) => {
   const { likedImages, clearLikedImages } = useLiked();
   const [userName, setUserName] = useState('');
   const [galleryName, setGalleryName] = useState('');
+  const [isSending, setIsSending] = useState(false);
 
   const sendEmail = () => {
+    if (isSending) return;
+
+    setIsSending(true);
+
     const templateParams = {
-      user_name: userName,
+      to_name: 'Maggie',
+      from_name: userName,
       gallery_name: galleryName,
       message: likedImages.map(img => `${img.caption} (ID: ${img.id})`).join('\n')
     };
 
-    emailjs.send('your_service_id', 'your_template_id', templateParams, 'your_public_key')
+    emailjs.send('service_zdo7lp8', 'template_xudhrkn', templateParams, 'M6qG3Ohjnk7js250h')
       .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
+        alert('SUCCESS!', response.status, response.text);
         clearLikedImages();
         onClose();
+        setIsSending(false);
       }, (error) => {
-        console.log('FAILED...', error);
+        alert('FAILED...', error);
+        setIsSending(false);
       });
   };
 
@@ -38,18 +46,20 @@ const LikedModal = ({ isOpen, onClose }) => {
     >
       <div className="liked-modal-content">
         <h2>Liked Images</h2>
-        <input
-          type="text"
-          placeholder="Your Name"
-          value={userName}
-          onChange={(e) => setUserName(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Gallery Name"
-          value={galleryName}
-          onChange={(e) => setGalleryName(e.target.value)}
-        />
+        <div className='input-container'>
+          <input
+            type="text"
+            placeholder="Your Name"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Gallery Name"
+            value={galleryName}
+            onChange={(e) => setGalleryName(e.target.value)}
+          />
+        </div>
         <ul>
           {likedImages.map(img => (
             <li key={img.id}>{img.caption}</li>
