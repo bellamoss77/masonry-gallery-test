@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseCrack, faPaw, faSeedling, faMountainSun, faFaceSmileBeam } from '@fortawesome/free-solid-svg-icons';
+import { faHouseCrack, faPaw, faSeedling, faMountainSun, faFaceSmileBeam, faDove } from '@fortawesome/free-solid-svg-icons';
 import './Home.scss';
 
 const Home = () => {
@@ -35,6 +35,11 @@ const Home = () => {
             <NavLink to='/ruins' className='tile-link'>
                Ruins Photography
                <FontAwesomeIcon icon={faHouseCrack} />
+            </NavLink>
+         </div>
+         <div className="birds" id="birdsTile">
+            <NavLink to='/birds' className='tile-link'>
+               <FontAwesomeIcon icon={faDove} />
             </NavLink>
          </div>
       </div>

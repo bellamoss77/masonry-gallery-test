@@ -321,12 +321,6 @@ const images = [
         loading: 'lazy',
         id: 55
     }, {
-        src: `${process.env.PUBLIC_URL}/NATURE/BIRD_H_36.png`,
-        alt: 'songbird',
-        caption: 'Songbird in Flight #2, Central Virginia - July 2024',
-        loading: 'lazy',
-        id: 56
-    }, {
         src: `${process.env.PUBLIC_URL}/NATURE/BIRD_H_29.png`,
         alt: 'songbird',
         caption: 'Diving Cardinal, Central Virginia - July 2024',

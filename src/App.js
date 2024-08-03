@@ -6,6 +6,7 @@ import LandscapeGallery from './components/LandscapeGallery';
 import NatureGallery from './components/NatureGallery';
 import PetsGallery from './components/PetsGallery';
 import RuinsGallery from './components/RuinsGallery';
+import BirdsGallery from './components/BirdGallery';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path='nature' element={<NatureGallery />} />
             <Route path='pets' element={<PetsGallery />} />
             <Route path='ruins' element={<RuinsGallery />} />
+            <Route path='birds' element={<BirdsGallery />} />
             <Route path='*' element={<Home />} />
           </Routes>
         </header>
