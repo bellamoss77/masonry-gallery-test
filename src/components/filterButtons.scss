@@ -1,0 +1,49 @@
+@import url("https://use.typekit.net/efa7ivj.css");
+
+$cursiveFont: 'dream-big-wide', cursive;
+$sansSerifFont: 'arboria', sans-serif;
+$cream: rgb(250, 246, 219);
+$beigeAccent: rgb(217, 195, 162);
+$blueAccent: rgb(0, 90, 112);
+$forestGreenPrimary: rgb(0,88,42);
+$activeColor: rgb(255, 255, 255);
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.filter-buttons {
+    @include flex(row, center, flex-start);
+
+    button {
+        background-color: $blueAccent;
+        border: none;
+        color: $cream;
+        padding: 5px 12px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-family: $sansSerifFont;
+        font-weight: 500;
+        margin: 5px 2px;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: 0 5px #666;
+        transition: all 0.2s ease-in-out;
+    
+        &:active {
+            background-color: rgb(0, 64, 80);
+            box-shadow: 0 2px #666;
+            transform: translateY(4px);
+        }
+
+        &.active {
+            background-color: rgb(0, 64, 80);
+            box-shadow: 0 2px #666;
+            transform: translateY(4px);
+        }
+    }
+}

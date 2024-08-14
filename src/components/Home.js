@@ -37,8 +37,9 @@ const Home = () => {
                <FontAwesomeIcon icon={faHouseCrack} />
             </NavLink>
          </div>
-         <div className="birds" id="birdsTile">
+         <div className="tile" id="birdsTile">
             <NavLink to='/birds' className='tile-link'>
+               Bird Photography
                <FontAwesomeIcon icon={faDove} />
             </NavLink>
          </div>

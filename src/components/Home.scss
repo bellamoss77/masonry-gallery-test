@@ -70,7 +70,8 @@ $activeColor: rgb(255, 255, 255);
         #landscapeTile,
         #natureTile,
         #petsTile,
-        #ruinsTile {
+        #ruinsTile,
+        #birdsTile {
             background-color: rgb(0, 0, 0);
             background-position: center;
             background-size: cover;
@@ -93,7 +94,7 @@ $activeColor: rgb(255, 255, 255);
         }
 
         #birdsTile {
-            background-image: url('');
+            background-image: url('https://raw.githubusercontent.com/bellamoss77/masonry-gallery-test/main/public/BIRDS/SONGBIRD_25.png');
         }
     }
 }

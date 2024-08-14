@@ -94,3 +94,8 @@ const Lightbox = ({ images, isOpen, onClose, startIndex }) => {
 };
 
 export default Lightbox;
+
+
+
+
+
